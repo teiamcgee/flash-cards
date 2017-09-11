@@ -62,7 +62,9 @@ enterLanguageHandleClick(i){
   const french = words[i].fr[i]
   console.log(spanish);
   if(userLang === german && ){
-    translateWord: english
+    this.setState({
+      translateWord: english
+    })
   }
 
 }
