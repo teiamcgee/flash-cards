@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(https://images.pexels.com/photos/269850/pexels-photo-269850.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#container{
+  height: 500px;
+  width: 500px;
+  border: 2px black solid;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+#flashcard{
+  height: 500px;
+  width: 500px;
+  border-top: 2px black solid;
+  text-align: center;
+}
