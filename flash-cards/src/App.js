@@ -53,7 +53,17 @@ userTranslation: e.target.value
 }
 
 enterLanguageHandleClick(i){
+  const usertoLang = "";
+  const userfromLang = "";
   const words = Object.assign({}, this.state);
+  const german = words[i].de[i];
+  const english = words[i].en[i];
+  const spanish = words[i].sp[i];
+  const french = words[i].fr[i]
+  console.log(spanish);
+  if(userLang === german && ){
+    translateWord: english
+  }
 
 }
 
