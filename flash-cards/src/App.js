@@ -53,23 +53,10 @@ userTranslation: e.target.value
 }
 
 enterLanguageHandleClick(i){
- const wordObject = Object.assign({}, this.state);
- const words = wordObject.words[i];
- const to = this.state.userToLanguage;
- const from = this.state.userFromLanguage;
- const french = words[i].fr;
- const english = words[0][i];
- const spanish = words[3][i];
- const german = words[1][i];
- const translate = this.state.translateWord
- if(to == "French" && from == "English"){
-   console.log("Cheese");
-   this.setState({
-     translate: french,
-   })
- }
+  const words = Object.assign({}, this.state);
 
 }
+
 
 reset(){
   this.setState({
@@ -83,14 +70,11 @@ reset(){
 
 
   render() {
-    const addText = this.state.words.map(function(i){
-
-    }, this)
     return (
     <div id="container">
       <h1>Language Learn</h1>
-      <h2>From<input type="text" value={this.state.userFromLanguage} onChange={this.fromHandleChange} /></h2>
-      <h2>To<input type="text" value={this.state.userToLanguage} onChange={this.toHandleChange} /></h2>
+      <h2>From <input type="text" value={this.state.userFromLanguage} onChange={this.fromHandleChange} /></h2>
+      <h2>To <input type="text" value={this.state.userToLanguage} onChange={this.toHandleChange} /></h2>
       <button onClick={this.enterLanguageHandleClick}>Enter</button>
       <div id="flashcard">
         <h3>{this.state.translateWord}</h3>
